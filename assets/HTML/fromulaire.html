@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtNum</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+       <style type="text/tailwindcss">
+      @theme {
+        --color-primary: #864cf1;
+        --color-body: #dcdada4c;
+      }
+      </style>
+</head>
+<body class="w-screen bg-body text-[.8rem] md:text-[1rem] relative">
+    <nav class="flex justify-between p-[1.4rem] lg:mx-[3rem]">
+        <div class="flex items-center">
+           <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/monzo--v1.png" alt="monzo--v1"/>
+            <span class="font-bold">ArtNum</span>
+        </div>
+        <img src="/assets/images/menu .svg" alt="" class="w-[1.5rem] cursor-pointer md:hidden">
+        <ul class="hidden md:flex md:w-[30rem] text-[#000] lg:flex  lg:w-40rem md:justify-between items-center *:hover:text-primary ">
+            <li><a href="#">Acceuil</a></li>
+            <li><a href="#">A propos</a></li>
+            <li><a href="#">Projets</a></li>
+            <li><a href="#">Contact</a></li>
+            <button class="text-[#fff] font-bold bg-gradient-to-r from-purple-600 to-blue-500 px-[.8rem] py-[.3rem] rounded-lg"><a href="./assets/HTML/fromulaire.html">S'inscrire</a></button>
+        </ul>
+    </nav>
+    <section class="mx-[1.3rem] mt-[2rem]">
+        <h1 class="text-center text-[1.8rem] font-bold">Rejoignez l'Avant-Garde</h1>
+        <h2 class="text-center text-gray-500">Inscrivez-vous pour recevoir  les dernieres actualites de l'exposition, des acces exclusif et plus encore</h2>
+
+        <form action="" class="mt-[2rem]">
+            <div class="flex flex-col gap-[.5rem]">
+            <label for="nom" class="font-bold">Nom Complet</label>
+            <input type="text" placeholder="Entrer votre Nom Complet" class="border-1 rounded py-[.3rem] border-gray-400 px-[.8rem] outline-hidden" required>
+            </div>
+
+            <div class="flex flex-col gap-[.5rem] my-[1rem]">
+            <label for="email" class="font-bold">Adresse-email</label>
+            <input type="email" placeholder="vous@example.com" class="border-1 rounded py-[.3rem] border-gray-400 px-[.8rem] outline-hidden" required>
+            </div>
+            <button class="bg-gradient-to-r from-purple-600 to-blue-500 w-full rounded py-[.3rem] font-bold text-[#fff] cursor-pointer">S'Inscrire</button>
+            <p class="text-center mt-[1.4rem]">Deja inscrit ? <span class="text-primary font-bold"><a href="#">Connectez-vous</a></span></p>
+        </form>
+    </section>
+    <footer>
+        <div>
+            <img src="/assets/images/" alt="">
+            <img src="/assets/images/" alt="">
+            <img src="/assets/images/" alt="">
+        </div>
+    </footer>
+</body>
+</html>
