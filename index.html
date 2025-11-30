@@ -5,18 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ArtNum</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+       <style type="text/tailwindcss">
+      @theme {
+        --color-primary: #864cf1;
+        --color-body: #dcdada4c;
+      }
+      </style>
 </head>
-<body class="w-screen bg-[#dcdada4c] text-[.8rem]">
-    <nav class="flex justify-between p-[1.4rem] w-full">
-        <div>
-            <img src="" alt="">
+<body class="w-screen bg-body text-[.8rem] md:text-[1rem]">
+    <nav class="flex justify-between p-[1.4rem] lg:mx-[3rem]">
+        <div class="flex items-center">
+           <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/monzo--v1.png" alt="monzo--v1"/>
             <span class="font-bold">ArtNum</span>
         </div>
-        <img src="./assets/images/menu .svg" alt="" class="w-[1.5rem] cursor-pointer">
+        <img src="./assets/images/menu .svg" alt="" class="w-[1.5rem] cursor-pointer md:hidden">
+        <ul class="hidden md:flex md:w-[30rem] text-[#000] lg:flex  lg:w-40rem md:justify-between items-center *:hover:text-primary ">
+            <li><a href="#">Acceuil</a></li>
+            <li><a href="#">A propos</a></li>
+            <li><a href="#">Projets</a></li>
+            <li><a href="#">Contact</a></li>
+            <button class="text-[#fff] font-bold bg-gradient-to-r from-purple-600 to-blue-500 px-[.8rem] py-[.3rem] rounded-lg">S'inscrire</button>
+        </ul>
+        
+        </div>
     </nav>
 
-    <section class="flex flex-col gap-3 w-full">
-        <h1 class="text-3xl font-bold text-center pt-[5rem]">Art Numerique: La Nouvelle Vague</h1>
+    <section class="flex flex-col gap-3  md:mt-[5rem] bg-[url(./assets/images/chat.png)] w-3/4 py-[2rem] my-auto mt-[3rem] mx-auto">
+        <h1 class="text-[2.4rem] font-bold text-center pt-[5rem]">Art Numerique: La Nouvelle Vague</h1>
         <h2 class="text-[.7rem] text-center mx-auto">Decouvrez les creation des talents de demain.</h2>
         <button class="text-[.7rem] text-[#fff] font-bold rounded-lg  px-[.6rem] bg-gradient-to-r from-purple-600 to-blue-500 py-[.6rem] w-[10rem] mx-auto">Decouvrir les oeuvres</button>
     </section>
@@ -24,42 +39,44 @@
 
     <section class="pt-[5rem] mx-[2rem]">
         <h1 class="font-bold text-center mb-[3rem]">L'Exposition</h1>
-        <h1 class="text-2xl font-semibold text-purple text-[1.4rem] text-[#864cf1]">Plongez au coeur de la creativite digitale</h1>
-        <h2 class="pt-[1rem] text-[.8rem]">Cette exposition est une celebration de l'innovation presentant des oeuvres qui repoussent les limittes de l'art. Decouvrez
+        <div class="md:flex md:gap-[3rem]">
+            <div class="md:flex md:flex-col md:w-1/2  md:my-auto">
+             <h1 class="md:text-[1.7rem] font-bold md:text-left">Plongez au coeur de la creativite digitale</h1>
+             <h2 class="pt-[1rem] text-[.8rem] md:text-[1rem]">Cette exposition est une celebration de l'innovation presentant des oeuvres qui repoussent les limittes de l'art. Decouvrez
             le concept, la mission et les dates cles de cet evenement unique qui met en avant le travail exceptionnel de nos etudiants. </h2>
-    </section>
-
-    <!-- Section 3 -->
-
-    <section class="m-[2rem]">
+            </div>
+            <div class="md:flex md:flex-col *:md:text-[1rem] mt-[2rem]">
         <div class="bg-[#fff] rounded-lg p-[1rem] flex flex-col gap-3">
             <img src="./assets/images/etoile.png" alt="" class="w-[1.5rem]">
             <h2 class="font-bold">Concept Innovant</h2>
-            <p class="text-[.6rem]">Explorer les intersection entre l'art, la technologie et l'imaginations.</p>
+            <p class="text-[.6rem] md:text-[.9rem]">Explorer les intersection entre l'art, la technologie et l'imaginations.</p>
         </div>
 
         <div class="bg-[#fff] rounded-lg p-[1rem] flex flex-col gap-3 mt-[1rem]">
             <img src="./assets/images/idee.png" alt="" class="w-[1.5rem]">
             <h2 class="font-bold">Concept Innovant</h2>
-            <p class="text-[.6rem]">Explorer les intersection entre l'art, la technologie et l'imaginations.</p>
+            <p class="text-[.6rem] md:text-[.9rem]">Explorer les intersection entre l'art, la technologie et l'imaginations.</p>
         </div>
 
          <div class="bg-[#fff] rounded-lg p-[1rem] flex flex-col gap-3 mt-[1rem]">
             <img src="./assets/images/idee.png" alt="" class="w-[1.5rem]">
             <h2 class="font-bold">Mission Creative</h2>
-            <p class="text-[.6rem]">Evenement virtuel du 15 Octobre au 30 Octobre. Accesible a tous partout.</p>
+            <p class="text-[.6rem] md:text-[.9rem]">Evenement virtuel du 15 Octobre au 30 Octobre. Accesible a tous partout.</p>
         </div>
+        </div>
+    </div>
     </section>
     
     <!-- Section4 -->
 
-    <section class="m-[2rem] flex flex-col gap-[1rem] ">
+    <section class="m-[2rem] flex flex-col gap-[1rem] my-[5rem]">
         <h1 class="font-bold text-center text-xl">Decouvrez les projets Etudiants</h1>
-        <div class="bg-[#fff] frounded-lg mt-[3rem]">
+        <div class="md:flex md:items-center gap-[1rem]">
+        <div class="bg-[#fff] frounded-lg">
             <img src="./assets/images/nebuleuse.jpeg" alt="" class="w-full rounded-lg">
             <span class="p-[1rem] flex flex-col gap-2">
             <h1 class="font-bold">Nebuleurse Chromatique</h1>
-            <h3 class="font-semibold text-[#864cf1] text-[.7rem]">par Alex Dubois</h3>
+            <h3 class="font-semibold text-primary text-[.7rem]">par Alex Dubois</h3>
             <p class="text-gray-500 text-[.7rem]">Une exploration visuele des formes organique genere par algorithme</p>
         </div>
 
@@ -67,7 +84,7 @@
             <img src="./assets/images/femme.jpeg" alt="" class="w-full rounded-lg">
             <span class="p-[1rem] flex flex-col gap-2">
             <h1 class="font-bold">Fracture Identitaire</h1>
-            <h3 class="font-semibold text-[#864cf1] text-[.7rem]">par Marie Lerlerc</h3>
+            <h3 class="font-semibold text-primary text-[.7rem]">par Marie Lerlerc</h3>
             <p class="text-gray-500 text-[.7rem]">Une exploration visuele des formes organique genere par algorithme</p>
             </span>
         
@@ -77,9 +94,10 @@
             <img src="./assets/images/fond.jpeg" alt="" class="w-full rounded-lg">
             <span class="p-[1rem] flex flex-col gap-2 ">
             <h1 class="font-bold">Reve liquide</h1>
-            <h3 class="font-semibold text-[#864cf1] text-[.7rem]">par Samuel Ray</h3>
+            <h3 class="font-semibold text-primary text-[.7rem]">par Samuel Ray</h3>
             <p class="text-gray-500 text-[.7rem]">Une exploration visuele des formes organique genere par algorithme</p>
             </span>
+        </div>
         </div>
     </section>
 
@@ -91,49 +109,49 @@
         <span class="text-[.8rem]">Partager votre avis sur l'exposition et decouvrez ce que les autres visiteurs ont pense.</span>
         <h1 class="font-bold mt-[2rem] text-left">Laisser un commentaire</h1>
         </div>
-        <form action="" class="text-gray-600 w-full">
+        <div class="md:flex">
+        <form action="" class="text-gray-600 w-full md:flex md:flex-col md:my-auto">
             <div class="flex flex-col gap-2">
             <label for="name" class="block">Nom:</label>
-            <input type="text" placeholder="Votre Nom" class="outline-hidden border-1 rounded px-[.5rem]">
+            <input type="text" placeholder="Votre Nom" class="outline-hidden border-1 rounded px-[.5rem] py-[.3rem]">
             </div>
             <div class="flex flex-col gap-2 mt-[1rem]">
             <label for="comm">Commentaire</label>
             <textarea placeholder=" Ecriver votre avis ici.." class="outline-hidden border-1 h-[5rem]"></textarea>
             </div>
             <div class=" flex">
-            <button class="cursor-pointer hover:bg-red-200 bg-gradient-to-r from-purple-600 to-blue-500 px-[1rem] py-[.5rem] text-[#fff] font-bold rounded-lg my-[1rem] w-[.8rem7] mx-auto">Soumettre</button>  
+            <button class="cursor-pointer hover:bg-red-200 bg-gradient-to-r from-purple-600 to-blue-500 px-[1rem] py-[.5rem] text-[#fff] font-bold rounded-lg my-[1rem] w-[.8rem7] mx-auto md:mx-0">Soumettre</button>  
         </div>
         </form>
-    </section>
-
-    <!-- Section 6 -->
-
-    <section class="text-[.rem] mx-[2rem] rounded-lg">
+        <div class="md:flex md:flex-col">
+    <div class="text-[.rem] mx-[2rem] rounded-lg">
+        
         <div class=" bg-[#fff] p-[1rem] my-[1rem]">
-        <div>
-            <img src="" alt="">
-        </div>
+            <div class="flex gap-[1rem] items-center">
+           <img src="./assets/images/J.png" alt="" width="40">
         <div class="font-bold flex flex-col">
             <span>Jeanne M</span>
             <span class="text-[.6rem] text-gray-600">Il y'a 2 jour</span>
+        </div>
         </div>
         <p class="py-[.6rem] text-gray-500">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dignissimos nulla eum iusto fugit a soluta sit asperiores sunt in."</p>
         </div>
 
         <div class=" bg-[#fff] p-[1rem]">
-        <div>
-            <img src="" alt="">
-        </div>
+        <div class="flex gap-[1rem]">
+            <img src="./assets/images/L.png" alt="" width="40">
         <div class="font-bold flex flex-col">
             <span>Luca T.</span>
             <span class="text-[.6rem] text-gray-600">Il y'a 1 semaine</span>
         </div>
+        </div>
         <p class="py-[.6rem] text-gray-500">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dignissimos nulla eum iusto fugit a soluta sit asperiores sunt in."</p>
         </div>
 
-        <div class="text-center mt-[2rem] h-[10rem]">
+        <div class="text-center mt-[2rem] h-[10rem] md:h-0">
             <a href="#" class="text-[#864cf1] font-bold">Voir tous les commentaires <img src="" alt=""></a>
         </div>
-    </section>
+    </div>
+    </div>
 </body>
 </html>
